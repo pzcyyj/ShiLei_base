@@ -38,6 +38,7 @@ public:
 		_first = _allocator.allocate(size);
 		_last = _first;
 		_end = _first + size;
+		cout << "vector()" << endl;
 	}
 	~vector()
 	{
@@ -146,6 +147,7 @@ class Test
 public:
 	Test() { cout << "Test()" << endl; }
 	~Test() { cout << "~Test()" << endl; }
+	Test(const Test&) { cout << "Test(const Test&)" << endl; }
 };
 
 int main()
