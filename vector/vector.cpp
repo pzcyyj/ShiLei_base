@@ -48,7 +48,7 @@ public:
 		{
 			_allocator.destroy(p);
 		}
-		_allocator.deallocate(_first);
+		_allocator.deallocate(_first); // 释放内存
 		_first = _end = _last = nullptr;
 	}
 	vector(const vector<T>& rhs)
