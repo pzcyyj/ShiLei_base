@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector", "vector\vector.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "复数类", "复数类\复数类.vcxproj", "{CA982ABC-664E-4F51-9DBC-668B6349ABD8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string类", "string类\string类.vcxproj", "{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CA982ABC-664E-4F51-9DBC-668B6349ABD8}.Release|x64.Build.0 = Release|x64
 		{CA982ABC-664E-4F51-9DBC-668B6349ABD8}.Release|x86.ActiveCfg = Release|Win32
 		{CA982ABC-664E-4F51-9DBC-668B6349ABD8}.Release|x86.Build.0 = Release|Win32
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Debug|x64.ActiveCfg = Debug|x64
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Debug|x64.Build.0 = Debug|x64
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Debug|x86.Build.0 = Debug|Win32
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x64.ActiveCfg = Release|x64
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x64.Build.0 = Release|x64
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x86.ActiveCfg = Release|Win32
+		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
