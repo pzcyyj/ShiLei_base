@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "复数类", "复数类\复�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string类", "string类\string类.vcxproj", "{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string类的iterator", "string类的iterator\string类的iterator.vcxproj", "{8134960E-F33E-4D60-A758-15EE189B66B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x64.Build.0 = Release|x64
 		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x86.ActiveCfg = Release|Win32
 		{1BFDAADB-7CDE-4579-B1C5-5A1F66A536D5}.Release|x86.Build.0 = Release|Win32
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Debug|x64.ActiveCfg = Debug|x64
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Debug|x64.Build.0 = Debug|x64
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Debug|x86.ActiveCfg = Debug|Win32
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Debug|x86.Build.0 = Debug|Win32
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x64.ActiveCfg = Release|x64
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x64.Build.0 = Release|x64
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x86.ActiveCfg = Release|Win32
+		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
