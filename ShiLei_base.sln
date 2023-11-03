@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string类", "string类\stri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string类的iterator", "string类的iterator\string类的iterator.vcxproj", "{8134960E-F33E-4D60-A758-15EE189B66B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector带iterator", "vector带iterator\vector带iterator.vcxproj", "{4B691C2E-F524-4A8E-9153-9A773B3A066D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x64.Build.0 = Release|x64
 		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x86.ActiveCfg = Release|Win32
 		{8134960E-F33E-4D60-A758-15EE189B66B0}.Release|x86.Build.0 = Release|Win32
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Debug|x64.ActiveCfg = Debug|x64
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Debug|x64.Build.0 = Debug|x64
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Debug|x86.Build.0 = Debug|Win32
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Release|x64.ActiveCfg = Release|x64
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Release|x64.Build.0 = Release|x64
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Release|x86.ActiveCfg = Release|Win32
+		{4B691C2E-F524-4A8E-9153-9A773B3A066D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
