@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// 容器的空间配置器allocator做四件事情  内存开辟/内存释放  对象构造/对象析构
+// 容器的空间配置器allocator做四件事情  内存开辟/内存释放  对象构造/对象析构1323
 template<typename T>
 struct Allocator
 {
