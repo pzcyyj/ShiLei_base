@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector带iterator", "vector
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "迭代器失效(vector)", "迭代器失效(vector)\迭代器失效(vector).vcxproj", "{2BF10202-32EF-4300-A09A-76C5235B01D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "new和delete", "new和delete\new和delete.vcxproj", "{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{2BF10202-32EF-4300-A09A-76C5235B01D3}.Release|x64.Build.0 = Release|x64
 		{2BF10202-32EF-4300-A09A-76C5235B01D3}.Release|x86.ActiveCfg = Release|Win32
 		{2BF10202-32EF-4300-A09A-76C5235B01D3}.Release|x86.Build.0 = Release|Win32
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Debug|x64.ActiveCfg = Debug|x64
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Debug|x64.Build.0 = Debug|x64
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Debug|x86.ActiveCfg = Debug|Win32
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Debug|x86.Build.0 = Debug|Win32
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Release|x64.ActiveCfg = Release|x64
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Release|x64.Build.0 = Release|x64
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Release|x86.ActiveCfg = Release|Win32
+		{11E9F99B-8A02-4570-BE84-40FC7DA7A26C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
