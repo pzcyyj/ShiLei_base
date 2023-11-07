@@ -137,13 +137,28 @@ public:
 		}
 		bool operator!=(const iterator& it) const
 		{
+			if (_pVec == nullptr || _pVec != it._pVec)
+			{
+				throw "iterator incompatable!";
+			}
 			return _p != it._p;
 		}
 		void operator++()
 		{
+			if (_pVec == nullptr)
+			{
+				throw "iterator invalid!";
+			}
 			++_p;
 		}
-		T& operator*() { return *_p; }
+		T& operator*() 
+		{
+			if (_pVec == nullptr)
+			{
+				throw "iterator invalid!";
+			}
+			return *_p;
+		}
 	private:
 		T* _p;
 		vector<T, Alloc>* _pVec;
