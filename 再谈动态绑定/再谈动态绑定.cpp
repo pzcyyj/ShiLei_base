@@ -1,20 +1,56 @@
-﻿// 再谈动态绑定.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿#include <iostream>
+using namespace std;
+#include <string>
 
-#include <iostream>
+class Car
+{
+public:
+	Car(string name, double oil) : _name(name), _oil(oil) {}
+	double getLeftMiles() {
+		return _oil * getMilesPerGallon();
+	}
+	string getName() { return _name; }
+protected:
+	string _name;
+	double _oil;
+	virtual double getMilesPerGallon() = 0;
+};
+
+double showLeftMiles(Car& car)
+{
+	return car.getLeftMiles();
+}
+
+class Benz : public Car
+{
+public:
+	Benz(string name, double oil) : Car(name, oil) {}
+	double getMilesPerGallon() { return 19.0; }
+};
+
+class BMW : public Car
+{
+public:
+	BMW(string name, double oil) : Car(name, oil) {}
+	double getMilesPerGallon() { return 17.0; }
+};
+
+class Audi : public Car
+{
+public:
+	Audi(string name, double oil) : Car(name, oil) {}
+	double getMilesPerGallon() { return 16.0; }
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Benz c1("Benz", 10.0);
+	cout << c1.getName() << ": " << showLeftMiles(c1) << endl;
+	BMW c2("BMW", 10.0);
+	cout << c2.getName() << ": " << showLeftMiles(c2) << endl;
+	Audi c3("Audi", 10.0);
+	cout << c2.getName() << ": " << showLeftMiles(c3) << endl;
+
+
+	return 0;
 }
-
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
