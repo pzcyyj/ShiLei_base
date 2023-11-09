@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "new和delete", "new和delet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "new和delete重载实现对象池", "new和delete重载实现对象池\new和delete重载实现对象池.vcxproj", "{F940056C-9229-48FC-A432-5EFD56F4A49B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "虚函数、静态绑定、动态绑定", "虚函数、静态绑定、动态绑定\虚函数、静态绑定、动态绑定.vcxproj", "{7C251282-BE95-43E6-997E-A38ECC78505E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{F940056C-9229-48FC-A432-5EFD56F4A49B}.Release|x64.Build.0 = Release|x64
 		{F940056C-9229-48FC-A432-5EFD56F4A49B}.Release|x86.ActiveCfg = Release|Win32
 		{F940056C-9229-48FC-A432-5EFD56F4A49B}.Release|x86.Build.0 = Release|Win32
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Debug|x64.ActiveCfg = Debug|x64
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Debug|x64.Build.0 = Debug|x64
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Debug|x86.Build.0 = Debug|Win32
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Release|x64.ActiveCfg = Release|x64
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Release|x64.Build.0 = Release|x64
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Release|x86.ActiveCfg = Release|Win32
+		{7C251282-BE95-43E6-997E-A38ECC78505E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
