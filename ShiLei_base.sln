@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "四种类型转换", "四�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector详解", "vector详解\vector详解.vcxproj", "{A9BB58B0-4787-4244-A5EC-5A6D8ED6F692}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "详解容器适配器", "详解容器适配器\详解容器适配器.vcxproj", "{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{A9BB58B0-4787-4244-A5EC-5A6D8ED6F692}.Release|x64.Build.0 = Release|x64
 		{A9BB58B0-4787-4244-A5EC-5A6D8ED6F692}.Release|x86.ActiveCfg = Release|Win32
 		{A9BB58B0-4787-4244-A5EC-5A6D8ED6F692}.Release|x86.Build.0 = Release|Win32
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Debug|x64.ActiveCfg = Debug|x64
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Debug|x64.Build.0 = Debug|x64
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Debug|x86.Build.0 = Debug|Win32
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Release|x64.ActiveCfg = Release|x64
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Release|x64.Build.0 = Release|x64
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Release|x86.ActiveCfg = Release|Win32
+		{F6A21BA5-FF7C-4689-8FDC-1E96E1453D23}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
