@@ -39,7 +39,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "详解容器适配器", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数对象", "函数对象\函数对象.vcxproj", "{FA36DBEE-787E-460A-9F9F-BDEFB8159A39}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "对象使用过程中调用了哪些方法", "对象使用过程中调用了哪些方法\对象使用过程中调用了哪些方法.vcxproj", "{2B809C6C-662A-4248-AB1A-CCC397E7AD1B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "对象的优化01", "对象使用过程中调用了哪些方法\对象使用过程中调用了哪些方法.vcxproj", "{2B809C6C-662A-4248-AB1A-CCC397E7AD1B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "对象优化02", "对象优化02\对象优化02.vcxproj", "{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,14 @@ Global
 		{2B809C6C-662A-4248-AB1A-CCC397E7AD1B}.Release|x64.Build.0 = Release|x64
 		{2B809C6C-662A-4248-AB1A-CCC397E7AD1B}.Release|x86.ActiveCfg = Release|Win32
 		{2B809C6C-662A-4248-AB1A-CCC397E7AD1B}.Release|x86.Build.0 = Release|Win32
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Debug|x64.ActiveCfg = Debug|x64
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Debug|x64.Build.0 = Debug|x64
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Debug|x86.Build.0 = Debug|Win32
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Release|x64.ActiveCfg = Release|x64
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Release|x64.Build.0 = Release|x64
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Release|x86.ActiveCfg = Release|Win32
+		{AF0445D6-88BC-45BB-B144-6DB1A3FB6BDF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
