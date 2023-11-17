@@ -24,6 +24,7 @@
     <ProjectGuid>{2b809c6c-662a-4248-ab1a-ccc397e7ad1b}</ProjectGuid>
     <RootNamespace>对象使用过程中调用了哪些方法</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>对象的优化01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
