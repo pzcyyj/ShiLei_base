@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "移动语义和类型完美
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "智能指针-基础", "智能指针-基础\智能指针-基础.vcxproj", "{E1363919-C472-4CFB-B005-9C4FE9510C80}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "强智能指针的交叉引用问题", "强智能指针的交叉引用问题\强智能指针的交叉引用问题.vcxproj", "{18E0E580-3F2B-4B25-9517-4F04AFF98581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{E1363919-C472-4CFB-B005-9C4FE9510C80}.Release|x64.Build.0 = Release|x64
 		{E1363919-C472-4CFB-B005-9C4FE9510C80}.Release|x86.ActiveCfg = Release|Win32
 		{E1363919-C472-4CFB-B005-9C4FE9510C80}.Release|x86.Build.0 = Release|Win32
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Debug|x64.ActiveCfg = Debug|x64
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Debug|x64.Build.0 = Debug|x64
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Debug|x86.ActiveCfg = Debug|Win32
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Debug|x86.Build.0 = Debug|Win32
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Release|x64.ActiveCfg = Release|x64
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Release|x64.Build.0 = Release|x64
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Release|x86.ActiveCfg = Release|Win32
+		{18E0E580-3F2B-4B25-9517-4F04AFF98581}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
