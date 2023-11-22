@@ -16,7 +16,7 @@ struct Allocator
 	}
 	void construct(T* p, const T& val) // 负责对象构造
 	{
-		new (p) T(val); // 定位new
+		new (p) T(val); // 定位new，调用拷贝构造函数
 	}
 	void destroy(T* p) // 负责对象析构
 	{
