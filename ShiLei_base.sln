@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "强智能指针的交叉引
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "多线程访问共享对象的线程安全问题", "多线程访问共享对象的线程安全问题\多线程访问共享对象的线程安全问题.vcxproj", "{7108E54B-F612-4104-8238-321B00121232}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删除器", "删除器\删除器.vcxproj", "{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{7108E54B-F612-4104-8238-321B00121232}.Release|x64.Build.0 = Release|x64
 		{7108E54B-F612-4104-8238-321B00121232}.Release|x86.ActiveCfg = Release|Win32
 		{7108E54B-F612-4104-8238-321B00121232}.Release|x86.Build.0 = Release|Win32
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Debug|x64.ActiveCfg = Debug|x64
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Debug|x64.Build.0 = Debug|x64
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Debug|x86.ActiveCfg = Debug|Win32
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Debug|x86.Build.0 = Debug|Win32
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Release|x64.ActiveCfg = Release|x64
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Release|x64.Build.0 = Release|x64
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Release|x86.ActiveCfg = Release|Win32
+		{ACDB95BA-3572-400C-B6AD-C7FEB004FC85}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
