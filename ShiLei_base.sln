@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bind1st,bind2nd", "bind1st,
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "function使用", "function使用\function使用.vcxproj", "{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板的完全特例化和部分特例化", "模板的完全特例化和部分特例化\模板的完全特例化和部分特例化.vcxproj", "{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -291,6 +293,14 @@ Global
 		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x64.Build.0 = Release|x64
 		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x86.ActiveCfg = Release|Win32
 		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x86.Build.0 = Release|Win32
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Debug|x64.ActiveCfg = Debug|x64
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Debug|x64.Build.0 = Debug|x64
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Debug|x86.ActiveCfg = Debug|Win32
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Debug|x86.Build.0 = Debug|Win32
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x64.ActiveCfg = Release|x64
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x64.Build.0 = Release|x64
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x86.ActiveCfg = Release|Win32
+		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
