@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删除器", "删除器\删�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bind1st,bind2nd", "bind1st,bind2nd\bind1st,bind2nd.vcxproj", "{7DFEB439-4F03-4003-B627-423CEEB06A95}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "function使用", "function使用\function使用.vcxproj", "{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -281,6 +283,14 @@ Global
 		{7DFEB439-4F03-4003-B627-423CEEB06A95}.Release|x64.Build.0 = Release|x64
 		{7DFEB439-4F03-4003-B627-423CEEB06A95}.Release|x86.ActiveCfg = Release|Win32
 		{7DFEB439-4F03-4003-B627-423CEEB06A95}.Release|x86.Build.0 = Release|Win32
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Debug|x64.ActiveCfg = Debug|x64
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Debug|x64.Build.0 = Debug|x64
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Debug|x86.ActiveCfg = Debug|Win32
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Debug|x86.Build.0 = Debug|Win32
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x64.ActiveCfg = Release|x64
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x64.Build.0 = Release|x64
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x86.ActiveCfg = Release|Win32
+		{35ABB6B3-DAA2-49C5-99CA-FA93298A0B86}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
