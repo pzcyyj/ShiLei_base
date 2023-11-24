@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "function使用", "function�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板的完全特例化和部分特例化", "模板的完全特例化和部分特例化\模板的完全特例化和部分特例化.vcxproj", "{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "function实现原理", "function实现原理\function实现原理.vcxproj", "{18436A23-DA39-4CC2-8678-E45052BAD1BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -301,6 +303,14 @@ Global
 		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x64.Build.0 = Release|x64
 		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x86.ActiveCfg = Release|Win32
 		{1E690FBB-C04E-4D38-908D-A3C9EFE6EFE5}.Release|x86.Build.0 = Release|Win32
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Debug|x64.ActiveCfg = Debug|x64
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Debug|x64.Build.0 = Debug|x64
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Debug|x86.ActiveCfg = Debug|Win32
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Debug|x86.Build.0 = Debug|Win32
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Release|x64.ActiveCfg = Release|x64
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Release|x64.Build.0 = Release|x64
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Release|x86.ActiveCfg = Release|Win32
+		{18436A23-DA39-4CC2-8678-E45052BAD1BE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
