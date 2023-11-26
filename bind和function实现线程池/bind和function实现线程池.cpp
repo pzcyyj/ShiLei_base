@@ -21,8 +21,8 @@ int main()
 
     // 参数占位符
     bind(hello, _1)("hello bind 2!");
-    cout << bind(sum, _1, _2)(200, 300) << endl;
-    // 绑定器出了语句无法继续使用了
+    cout << bind(sum, placeholders::_1, _2)(200, 300) << endl;
+    // 绑定器出了语句无法继续使用了，因此借助function来复用
 
     function<void(string)> func1 = bind(hello, _1);
     func1("abc");
@@ -35,43 +35,43 @@ int main()
 class Thread
 {
 public:
-    Thread(function<void()> func) : _func(func) {}
+    Thread(function<void(int)> func, int no) : _func(func), _no(no) {}
     thread start()
     {
-        thread t(_func);
+        thread t(_func, _no);
         return t;
     }
 private:
-    function<void()> _func;
+    function<void(int)> _func;
+    int _no;
 };
 
 class ThreadPool
 {
 public:
     ThreadPool() {}
-    ~ThreadPool() 
+    ~ThreadPool()
     {
-        for (int i = 0; i < _pool.size(); ++i)
+        for (unsigned int i = 0; i < _pool.size(); ++i)
             delete _pool[i];
     }
+    // 开启线程池
     void startPool(int size)
     {
         for (int i = 0; i < size; ++i)
         {
-            _pool.push_back(new Thread(bind(&ThreadPool::runInThread, this, i)));
+            _pool.push_back(new Thread(bind(&ThreadPool::runInThread, this, _1), i));
         }
         for (int i = 0; i < size; ++i)
         {
             _handler.push_back(_pool[i]->start());
         }
-        for (thread& t : _handler)
-        {
-            t.join();
-        }
+        for (thread& t : _handler){ t.join(); }
     }
 private:
     vector<Thread*> _pool;
     vector<thread> _handler;
+    // 线程函数
     void runInThread(int id)
     {
         cout << "call runInThread! id:" << id << endl;
