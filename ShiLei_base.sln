@@ -81,7 +81,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单例模式", "单例模�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线程安全的懒汉单例", "线程安全的懒汉单例\线程安全的懒汉单例.vcxproj", "{C9E51E3C-6EB1-457D-9CBB-0F578C68B309}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "简单工厂", "简单工厂\简单工厂.vcxproj", "{95A8F365-C8E1-4FA2-8F0B-0C73E5D61B89}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "简单工厂和工厂方法", "简单工厂\简单工厂.vcxproj", "{95A8F365-C8E1-4FA2-8F0B-0C73E5D61B89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "抽象工厂", "抽象工厂\抽象工厂.vcxproj", "{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -411,6 +413,14 @@ Global
 		{95A8F365-C8E1-4FA2-8F0B-0C73E5D61B89}.Release|x64.Build.0 = Release|x64
 		{95A8F365-C8E1-4FA2-8F0B-0C73E5D61B89}.Release|x86.ActiveCfg = Release|Win32
 		{95A8F365-C8E1-4FA2-8F0B-0C73E5D61B89}.Release|x86.Build.0 = Release|Win32
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Debug|x64.ActiveCfg = Debug|x64
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Debug|x64.Build.0 = Debug|x64
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Debug|x86.Build.0 = Debug|Win32
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Release|x64.ActiveCfg = Release|x64
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Release|x64.Build.0 = Release|x64
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Release|x86.ActiveCfg = Release|Win32
+		{8E8C382A-87B9-4F5A-839F-B241FC6A62A5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
