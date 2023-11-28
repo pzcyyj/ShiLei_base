@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线程间互斥", "线程�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线程间同步通信", "线程间同步通信\线程间同步通信.vcxproj", "{8EED2AB4-87FB-4026-B7E1-33E4BF24A1DA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "atomic原子操作", "atomic原子操作\atomic原子操作.vcxproj", "{849C31C8-D19F-4C86-9117-39E33F0FA51D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -371,6 +373,14 @@ Global
 		{8EED2AB4-87FB-4026-B7E1-33E4BF24A1DA}.Release|x64.Build.0 = Release|x64
 		{8EED2AB4-87FB-4026-B7E1-33E4BF24A1DA}.Release|x86.ActiveCfg = Release|Win32
 		{8EED2AB4-87FB-4026-B7E1-33E4BF24A1DA}.Release|x86.Build.0 = Release|Win32
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Debug|x64.ActiveCfg = Debug|x64
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Debug|x64.Build.0 = Debug|x64
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Debug|x86.ActiveCfg = Debug|Win32
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Debug|x86.Build.0 = Debug|Win32
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Release|x64.ActiveCfg = Release|x64
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Release|x64.Build.0 = Release|x64
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Release|x86.ActiveCfg = Release|Win32
+		{849C31C8-D19F-4C86-9117-39E33F0FA51D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
