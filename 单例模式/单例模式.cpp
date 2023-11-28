@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 
 
-// 饿汉式单例  一定是线程安全的
+// 懒汉单例 线程不安全
 class Singleton
 {
 public:
