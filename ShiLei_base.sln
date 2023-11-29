@@ -89,6 +89,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "代理模式", "代理模�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "装饰器模式", "装饰器模式\装饰器模式.vcxproj", "{56104CD7-98F2-41AA-97BD-5F8619EA2C1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "适配器模式", "适配器模式\适配器模式.vcxproj", "{4488DFD9-C253-4D74-9769-451ED143C52C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -441,6 +443,14 @@ Global
 		{56104CD7-98F2-41AA-97BD-5F8619EA2C1F}.Release|x64.Build.0 = Release|x64
 		{56104CD7-98F2-41AA-97BD-5F8619EA2C1F}.Release|x86.ActiveCfg = Release|Win32
 		{56104CD7-98F2-41AA-97BD-5F8619EA2C1F}.Release|x86.Build.0 = Release|Win32
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Debug|x64.ActiveCfg = Debug|x64
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Debug|x64.Build.0 = Debug|x64
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Debug|x86.ActiveCfg = Debug|Win32
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Debug|x86.Build.0 = Debug|Win32
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Release|x64.ActiveCfg = Release|x64
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Release|x64.Build.0 = Release|x64
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Release|x86.ActiveCfg = Release|Win32
+		{4488DFD9-C253-4D74-9769-451ED143C52C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
