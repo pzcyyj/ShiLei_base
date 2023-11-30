@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "适配器模式", "适配�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "观察者模式", "观察者模式\观察者模式.vcxproj", "{92417F4D-0134-4E6C-8392-7E26B68C6951}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "深度优先搜索迷宫路径", "深度优先搜索迷宫路径\深度优先搜索迷宫路径.vcxproj", "{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -461,6 +463,14 @@ Global
 		{92417F4D-0134-4E6C-8392-7E26B68C6951}.Release|x64.Build.0 = Release|x64
 		{92417F4D-0134-4E6C-8392-7E26B68C6951}.Release|x86.ActiveCfg = Release|Win32
 		{92417F4D-0134-4E6C-8392-7E26B68C6951}.Release|x86.Build.0 = Release|Win32
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Debug|x64.ActiveCfg = Debug|x64
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Debug|x64.Build.0 = Debug|x64
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Debug|x86.Build.0 = Debug|Win32
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Release|x64.ActiveCfg = Release|x64
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Release|x64.Build.0 = Release|x64
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Release|x86.ActiveCfg = Release|Win32
+		{5C6C1343-AA1A-4A6D-8249-9794B2D43FE5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
