@@ -63,11 +63,11 @@ public:
 				{
 					_pMaze[i][j]._state[DOWN] = YES;
 				}
-				if (j < 0 && _pMaze[i][j - 1]._val == 0)
+				if (j > 0 && _pMaze[i][j - 1]._val == 0)
 				{
 					_pMaze[i][j]._state[LEFT] = YES;
 				}
-				if (i < 0 && _pMaze[i - 1][j]._val == 0)
+				if (i > 0 && _pMaze[i - 1][j]._val == 0)
 				{
 					_pMaze[i][j]._state[UP] = YES;
 				}
