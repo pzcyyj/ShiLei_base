@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "广度优先搜索迷宫", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "大数加减法", "大数加减法\大数加减法.vcxproj", "{30DE4441-7B69-4ED1-B9F5-8E48304E135B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "海量数据查重", "海量数据查重\海量数据查重.vcxproj", "{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -491,6 +493,14 @@ Global
 		{30DE4441-7B69-4ED1-B9F5-8E48304E135B}.Release|x64.Build.0 = Release|x64
 		{30DE4441-7B69-4ED1-B9F5-8E48304E135B}.Release|x86.ActiveCfg = Release|Win32
 		{30DE4441-7B69-4ED1-B9F5-8E48304E135B}.Release|x86.Build.0 = Release|Win32
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Debug|x64.ActiveCfg = Debug|x64
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Debug|x64.Build.0 = Debug|x64
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Debug|x86.ActiveCfg = Debug|Win32
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Debug|x86.Build.0 = Debug|Win32
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Release|x64.ActiveCfg = Release|x64
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Release|x64.Build.0 = Release|x64
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Release|x86.ActiveCfg = Release|Win32
+		{74B90DD5-CD1A-43A6-940D-3FFA5BDF8F7B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
