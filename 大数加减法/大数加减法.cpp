@@ -5,9 +5,9 @@
 class BigInt
 {
 public:
-	BigInt(std::string str) : strDight(str) {}
+	BigInt(std::string str) : strDigit(str) {}
 private:
-	std::string strDight;
+	std::string strDigit;
 	friend std::ostream& operator<<(std::ostream& out, const BigInt& src);
 	friend BigInt operator+(const BigInt& lhs, const BigInt& rhs);
 	friend BigInt operator-(const BigInt& lhs, const BigInt& rhs);
@@ -15,7 +15,7 @@ private:
 
 std::ostream& operator<<(std::ostream& out, const BigInt& src)
 {
-	out << src.strDight;
+	out << src.strDigit;
 	return out;
 }
 
@@ -29,13 +29,13 @@ BigInt operator+(const BigInt& lhs, const BigInt& rhs)
 	*/
 	std::string result;
 	bool flag = false;
-	int size1 = lhs.strDight.length() - 1;
-	int size2 = rhs.strDight.length() - 1;
+	int size1 = lhs.strDigit.length() - 1;
+	int size2 = rhs.strDigit.length() - 1;
 	int i = size1, j = size2;
 
 	for (; i >= 0 && j >= 0; --i, --j)
 	{
-		int ret = lhs.strDight[i] - '0' + rhs.strDight[j] - '0';
+		int ret = lhs.strDigit[i] - '0' + rhs.strDigit[j] - '0';
 		if (flag)
 		{
 			ret += 1;
@@ -55,7 +55,7 @@ BigInt operator+(const BigInt& lhs, const BigInt& rhs)
 	{
 		while (i >= 0)
 		{
-			int ret = lhs.strDight[i] - '0';
+			int ret = lhs.strDigit[i] - '0';
 			if (flag)
 			{
 				ret += 1;
@@ -75,7 +75,7 @@ BigInt operator+(const BigInt& lhs, const BigInt& rhs)
 	{
 		while (j >= 0)
 		{
-			int ret = rhs.strDight[j] - '0';
+			int ret = rhs.strDigit[j] - '0';
 			if (flag)
 			{
 				ret += 1;
@@ -104,21 +104,21 @@ BigInt operator-(const BigInt& lhs, const BigInt& rhs)
 	bool flag = false;
 	bool minor = false;
 
-	std::string maxStr = lhs.strDight;
-	std::string minStr = rhs.strDight;
+	std::string maxStr = lhs.strDigit;
+	std::string minStr = rhs.strDigit;
 
 	if (maxStr.length() < minStr.length())
 	{
-		maxStr = rhs.strDight;
-		minStr = lhs.strDight;
+		maxStr = rhs.strDigit;
+		minStr = lhs.strDigit;
 		minor = true;
 	}
 	else if (maxStr.length() == minStr.length())
 	{
 		if (maxStr < minStr)
 		{
-			maxStr = rhs.strDight;
-			minStr = lhs.strDight;
+			maxStr = rhs.strDigit;
+			minStr = lhs.strDigit;
 			minor = true;
 		}
 		else if (maxStr == minStr)
