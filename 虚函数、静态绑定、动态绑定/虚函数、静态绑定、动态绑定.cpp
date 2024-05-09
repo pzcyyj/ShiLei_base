@@ -54,7 +54,7 @@ class Derive : public Base
 public:
 	Derive(int data = 20) : Base(data), mb(data) {}
 	/*
-	如果派生类的方法，和基类继承来的某个方法，返回值、函数名、参数列表都相同，
+	总结四：如果派生类的方法，和基类继承来的某个方法，返回值、函数名、参数列表都相同，
 	而且基类的方法是virtual虚函数，那么派生类的这个方法，自动处理成虚函数
 	重写《=》覆盖
 	*/
@@ -72,7 +72,7 @@ int main()
 	pb -> Base Base::show 如果发现show是普通函数，就进行静态绑定
 
 	pb -> Base Base::show 如果发现show是虚函数，就进行动态绑定
-	mov eax, dword ptr[pb]  // 取pb的vfptr放入eax
+	mov eax, dword ptr[pb]  // 取pb指向的派生类对象d的前四个字节vfptr放入eax
 	mov ecx, dword ptr[eax] // 将vfptr指向的虚函数地址放入ecx
 	call ecx // 动态（运行时期）的绑定（函数的调用）
 	*/
