@@ -34,15 +34,13 @@ void operator delete[](void* ptr)
 class Test
 {
 public:
-	Test(int data = 10) { cout << "Test()" << endl; }
+	Test() { cout << "Test()" << endl; }
 	~Test() { cout << "~Test()" << endl; }
 
-private:
-	int* ptr;
 };
 
 int main()
 {
-	Test* p1 = new Test[6];
-	delete p1;
+	Test* p1 = new Test[1];
+	delete []p1;
 }

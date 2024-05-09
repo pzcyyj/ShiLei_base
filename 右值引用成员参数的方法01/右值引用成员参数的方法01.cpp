@@ -40,9 +40,23 @@ public:
 		cout << "CMyString(CMyString&&)" << endl;
 	}
 
+	CMyString& operator=(CMyString& str)
+	{
+		cout << "CMyString& operator=(String&)" << endl;
+		if (this == &str)
+			return *this;
+
+		delete[] mptr;
+
+		mptr = new char[strlen(str.mptr) + 1];
+		strcpy(mptr, str.mptr);
+
+		return *this;
+	}
+
 	CMyString& operator=(CMyString&& str)
 	{
-		cout << "String& operator=(String&&)" << endl;
+		cout << "CMyString& operator=(String&&)" << endl;
 		if (this == &str)
 			return *this;
 
@@ -79,7 +93,7 @@ CMyString operator+(const CMyString& lhs,
 	tmpStr.mptr = new char[strlen(lhs.mptr) + strlen(rhs.mptr) + 1];
 	strcpy(tmpStr.mptr, lhs.mptr);
 	strcat(tmpStr.mptr, rhs.mptr);
-	
+	cout << "--------------------" << endl;
 
 	return tmpStr;
 }
@@ -94,7 +108,10 @@ int main()
 {
 	CMyString str1 = "aaaaaaaaaaaaaaaaa";
 	CMyString str2 = "bbbbbbbbbbbbbb";
-	CMyString str3 = str1 + str2;
+	CMyString str3;
+	str3 = str1 + str2;
+	CMyString str4;
+	str4 = str2;
 	cout << str3 << endl;
 
 	cout << "--------------------" << endl;

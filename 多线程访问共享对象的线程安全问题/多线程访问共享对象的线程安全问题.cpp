@@ -11,23 +11,23 @@ public:
 	void testA() { cout << "很好的方法" << endl; }
 };
 
-void handler01(shared_ptr<A> pw)
+void handler01(weak_ptr<A> pw)
 {
-	//std::this_thread::sleep_for(std::chrono::seconds(20));
+	std::this_thread::sleep_for(std::chrono::seconds(2));
 	// q访问a对象时，需要侦测一下A对象是否存活
-	/*shared_ptr<A> sp = pw.lock();
+	shared_ptr<A> sp = pw.lock();
 	if (sp != nullptr)
 	{
 		sp->testA();
 	}
 	else
-		cout << "A对象已经析构，不能再访问" << endl;*/
-	if (pw != nullptr)
+		cout << "A对象已经析构，不能再访问" << endl;
+	/*if (pw != nullptr)
 	{
 		pw->testA();
 	}
 	else
-		cout << "A对象已经析构，不能再访问" << endl;
+		cout << "A对象已经析构，不能再访问" << endl;*/
 }
 
 int main()
@@ -35,16 +35,14 @@ int main()
 	{
 		shared_ptr<A> p(new A());
 
-		thread t1(handler01, p);
+		thread t1(handler01, weak_ptr<A>(p));
 
 		t1.detach();
 
-		p->testA();
-
-		std::this_thread::sleep_for(std::chrono::seconds(20));
+		
 	}
 
-	
+	std::this_thread::sleep_for(std::chrono::seconds(20));
 
 	return 0;
 }
