@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "海量数据查重", "海�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "海量数据求top k", "海量数据求top k\海量数据求top k.vcxproj", "{BD4E9909-561D-40A0-B58F-2439B1C1268F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emplace", "emplace\emplace.vcxproj", "{EB134F06-01FF-4E57-844D-575BB79D6D79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -511,6 +513,14 @@ Global
 		{BD4E9909-561D-40A0-B58F-2439B1C1268F}.Release|x64.Build.0 = Release|x64
 		{BD4E9909-561D-40A0-B58F-2439B1C1268F}.Release|x86.ActiveCfg = Release|Win32
 		{BD4E9909-561D-40A0-B58F-2439B1C1268F}.Release|x86.Build.0 = Release|Win32
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Debug|x64.ActiveCfg = Debug|x64
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Debug|x64.Build.0 = Debug|x64
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Debug|x86.Build.0 = Debug|Win32
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Release|x64.ActiveCfg = Release|x64
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Release|x64.Build.0 = Release|x64
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Release|x86.ActiveCfg = Release|Win32
+		{EB134F06-01FF-4E57-844D-575BB79D6D79}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
