@@ -46,19 +46,19 @@ public:
 
 int main()
 {
-	Base* pb1 = new Base();
+	//Base* pb1 = new Base();
 	/*
 	mov eax, dword ptr[pb1]
 	mov ecx, dword ptr[eax] eax:0x00000000 不是Base::vftable
 	call ecx
 	*/
-	pb1->show();
-	delete pb1;
+	//pb1->show();
+	//delete pb1;
 
 	// 正常运行
-	/*Base* pb2 = new Derive();
+	Base* pb2 = new Derive();
 	pb2->show();
-	delete pb2;*/
+	delete pb2;
 
 	return 0;
 }

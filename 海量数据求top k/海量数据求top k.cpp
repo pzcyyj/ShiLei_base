@@ -38,7 +38,7 @@ int main()
 	{
 		minHeap.push(vec[k]);
 	}
-
+	
 	for (; k < vec.size(); ++k)
 	{
 		if (vec[k] > minHeap.top())

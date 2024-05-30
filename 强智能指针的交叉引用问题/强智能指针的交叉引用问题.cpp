@@ -42,6 +42,7 @@ int main()
 {
     shared_ptr<A> pa(new A());
     shared_ptr<B> pb(new B());
+    auto p1 = make_shared<A>();
 
     pa->_ptrb = pb;
     pb->_ptra = pa;
