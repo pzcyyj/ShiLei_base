@@ -47,5 +47,9 @@ int main()
 	maxHeap.push(Data(15, 15));
 	maxHeap.push(Data(20, 15));
 
+	cout << maxHeap.top().ma << endl;
+	maxHeap.pop();
+	cout << maxHeap.top().ma << endl;
+
 	return 0;
 }

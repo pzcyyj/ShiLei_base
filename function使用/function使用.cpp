@@ -68,13 +68,13 @@ int main()
 	
 
 	auto it = actionMap.find(choice);
-	if (it == actionMap.end())
+	if (it != actionMap.end())
 	{
-		cout << "输入数字无效，重新选择！" << endl;
+		it->second();
 	}
 	else
 	{
-		it->second();
+		cout << "输入数字无效，重新选择！" << endl;
 	}
 
 	}

@@ -73,7 +73,7 @@ int main()
     bind2nd: + less bool operator() (const _Ty& _Left, 70)
     */
     auto it1 = my_find_if(vec.begin(), vec.end(), 
-        mybind1st(greater<int>(), 70));
+        bind1st(greater<int>(), 70));
     /*auto it1 = my_find_if(vec.begin(), vec.end(),
         bind2nd(less<int>(), 70));*/
     if (it1 != vec.end())

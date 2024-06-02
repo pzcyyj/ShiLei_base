@@ -18,11 +18,14 @@ int main()
     bind(hello, "hello bind!")();
     cout << bind(sum, 10, 10)() << endl;
     cout << bind(&Test::sum, Test(), 20, 30)() << endl;
+    function<int(Test, int)> func3 = bind(&Test::sum, placeholders::_1, 20, placeholders::_2);
+    cout << func3(Test(), 18) << endl;
 
     // 参数占位符
     bind(hello, _1)("hello bind 2!");
     cout << bind(sum, placeholders::_1, _2)(200, 300) << endl;
     // 绑定器出了语句无法继续使用了，因此借助function来复用
+    function<int(int, int)> func4 = bind(sum, placeholders::_1, _2);
 
     function<void(string)> func1 = bind(hello, _1);
     func1("abc");
@@ -30,19 +33,20 @@ int main()
 
     return 0;
 }
-#endif // 0
+#endif
 
 class Thread
 {
 public:
-    Thread(function<void(int)> func, int no) : _func(func), _no(no) {}
+    using Func = function<void(int)>;
+    Thread(Func func, int no) : _func(func), _no(no) {}
     thread start()
     {
         thread t(_func, _no);
         return t;
     }
 private:
-    function<void(int)> _func;
+    Func _func;
     int _no;
 };
 
@@ -52,6 +56,7 @@ public:
     ThreadPool() {}
     ~ThreadPool()
     {
+        // 释放Thread对象占用的堆资源
         for (unsigned int i = 0; i < _pool.size(); ++i)
             delete _pool[i];
     }
