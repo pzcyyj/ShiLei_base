@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+//#include <vector>
 using namespace std;
 
 class Test
@@ -28,49 +28,49 @@ struct MyAllocator
 	}
 };
 
-//template<typename T, typename Alloc = MyAllocator<T>>
-//class vector
-//{
-//public:
-//	vector()
-//		: vec_(nullptr)
-//		, size_(0)
-//		, idx_(0)
-//	{}
-//public:
-//	void reserve(size_t size)
-//	{
-//		vec_ = allocator_.allocate(size);
-//		size_ = size;
-//	}
-//	/*void push_back(const T& val)
-//	{
-//		allocator_.construct(vec_ + idx_, val);
-//		idx_++;
-//	}
-//	void push_back(T&& val)
-//	{
-//		allocator_.construct(vec_ + idx_, move(val));
-//		idx_++;
-//	}*/
-//	template<typename Ty>
-//	void push_back(Ty&& val)
-//	{
-//		allocator_.construct(vec_ + idx_, forward<Ty>(val));
-//		idx_++;
-//	}
-//	template<typename... Types>
-//	void emplace_back(Types&&... args)
-//	{
-//		allocator_.construct(vec_ + idx_, forward<Types>(args)...);
-//		idx_++;
-//	}
-//private:
-//	T* vec_;
-//	int size_;
-//	int idx_;
-//	Alloc allocator_;
-//};
+template<typename T, typename Alloc = MyAllocator<T>>
+class vector
+{
+public:
+	vector()
+		: vec_(nullptr)
+		, size_(0)
+		, idx_(0)
+	{}
+public:
+	void reserve(size_t size)
+	{
+		vec_ = allocator_.allocate(size);
+		size_ = size;
+	}
+	/*void push_back(const T& val)
+	{
+		allocator_.construct(vec_ + idx_, val);
+		idx_++;
+	}
+	void push_back(T&& val)
+	{
+		allocator_.construct(vec_ + idx_, move(val));
+		idx_++;
+	}*/
+	template<typename Ty>
+	void push_back(Ty&& val)
+	{
+		allocator_.construct(vec_ + idx_, forward<Ty>(val));
+		idx_++;
+	}
+	template<typename... Types>
+	void emplace_back(Types&&... args)
+	{
+		allocator_.construct(vec_ + idx_, forward<Types>(args)...);
+		idx_++;
+	}
+private:
+	T* vec_;
+	int size_;
+	int idx_;
+	Alloc allocator_;
+};
 
 int main()
 {
@@ -91,7 +91,7 @@ int main()
 	cout << "----------------" << endl;
 
 	vec.push_back(20);
-	vec.emplace_back(39, 40);
+	vec.emplace_back(39, 10);
 
 	cout << "----------------" << endl;
 }

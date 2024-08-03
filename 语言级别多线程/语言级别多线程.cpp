@@ -28,12 +28,12 @@ void threadHandler1(int time)
 int main()
 {
     // 创建线程对象，传入线程函数，新线程开始运行
-    std::thread t1(threadHandler1, 2);
+    std::thread t1(threadHandler1, 1);
     cout << "--------------" << endl;
     // 主线程等待调用join的线程完成线程函数结束，再继续往下运行
-    t1.join();
+    //t1.join();
     // 把子线程设置为分离线程
-    /*t1.detach();*/
+    t1.detach();
     std::this_thread::sleep_for(std::chrono::seconds(5));
     cout << "main thread done!" << endl;
 

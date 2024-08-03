@@ -33,17 +33,16 @@ swap()
 int main()
 {
 	vector<int> vec;
-	//vec.reserve(20);
+	// vec.resize(20);
+	// vec.reserve(20);
 	cout << vec.size() << endl;
-	cout << vec.empty() << endl;
 
 	for (int i = 0; i < 20; ++i)
 	{
-		vec.push_back(rand() % 100 + 1);
+		vec.push_back(i);
 	}
 
 	cout << vec.size() << endl;
-	cout << vec.empty() << endl;
 
 	int size = vec.size();
 	for (int i = 0; i < size; ++i)

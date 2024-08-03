@@ -14,9 +14,10 @@ std::mutex mtx; // 全局的一把互斥锁
 
 void sellTicket(int index)
 {
+	//mtx.lock(); 为什么不能在第一次判断前加锁，这样会导致同一个线程一直占用资源不放
 	while (ticketCount > 0) // 锁+双重判断
 	{
-		//mtx.lock();
+		//mtx.lock(); 只剩一张票时，可能会进两个线程
 		{
 			std::lock_guard<std::mutex> lock(mtx); // 利用栈上对象出作用域析构的特点，保证所有线程都能释放锁，防止死锁
 			if (ticketCount > 0)
@@ -25,9 +26,10 @@ void sellTicket(int index)
 				ticketCount--;
 			}
 		}
-		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 		//mtx.unlock();
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
+	//mtx.unlock();
 }
 
 int main()
